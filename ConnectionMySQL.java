@@ -20,7 +20,7 @@ public class ConnectionMySQL {
   		e.printStackTrace();
   	}
 
-  	String serverName = "localhost"; // Endereço do servidor do BD
+  	String serverName = "localhost:3306"; // Endereço do servidor do BD
   	String mydatabase = "sgdb"; // Nome do seu banco de dados
   	String url = "jdbc:mysql://" + serverName + "/" + mydatabase; // String de Conexão.
   	String username = "root"; // Nome de um usuário de seu BD
@@ -29,8 +29,8 @@ public class ConnectionMySQL {
   	try {
   		connection = DriverManager.getConnection(url, username, password);
   		//connection = DriverManager.getConnection("jdbc:mysql://localhost/mapeamento", "root", "");
-  		status = " Conectado";
-  		System.out.println("Banco " + mydatabase + status);
+  		status = " Connected";
+  		System.out.printf("DB %s %s in url: %s", mydatabase, status, url);
   	} catch (SQLException e) {
   		System.out.println(status);
   		e.printStackTrace();

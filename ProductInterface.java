@@ -7,7 +7,7 @@ public interface ProductInterface {
 
 	void readProduct(String filterName) throws SQLException;
 
-	void upadateProcuct(int code, String name, double price, String desc) throws SQLException;
+	void updateProduct(int code, String name, double price, String desc) throws SQLException;
 
 	void deleteProduct(int code) throws SQLException;
 }
