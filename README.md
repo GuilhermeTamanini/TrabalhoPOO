@@ -11,7 +11,7 @@ show databases;
 #03 Criar um banco de dados<br/>
 create database sgdb;
 
-#04 Usar o banco 
+#04 Usar o banco <br/>
 use sgdb;
 
 #05 Criar tabela do produto<br/>
